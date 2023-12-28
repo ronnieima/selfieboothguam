@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville, League_Spartan } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
-
-const fontLibreBakersville = Libre_Baskerville({
-  subsets: ["latin"],
-  weight: "400",
-});
-export const fontLeagueSpartan = League_Spartan({
-  subsets: ["latin"],
-  weight: "700",
-});
+import { fontLibreBakersville } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Selfiebooth Guam",

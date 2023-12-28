@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { fontLeagueSpartan } from "../layout";
+import { fontLeagueSpartan } from "@/lib/fonts";
 import { Camera } from "lucide-react";
 
 function Hero() {

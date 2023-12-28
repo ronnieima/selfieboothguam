@@ -5,7 +5,7 @@ import {
   Touchpad,
   VenetianMask,
 } from "lucide-react";
-import { fontLeagueSpartan } from "../layout";
+import { fontLeagueSpartan } from "../../lib/fonts";
 
 const LUCIDE_ICON_SIZES = 64;
 
@@ -29,18 +29,20 @@ const services = [
 
 function Services() {
   return (
-    <section className="h-[700px] p-32 flex flex-col gap-8">
-      <header className="text-center text-6xl ">
+    <section className="h-[700px] py-16 lg:p-32 flex flex-col items-center gap-8">
+      <header className="text-center text-4xl md:text-6xl ">
         <h2 className={`${fontLeagueSpartan.className}`}>
           Photobooth Features
         </h2>
       </header>
-      <div className="flex flex-col lg:grid grid-cols-3  gap-8">
-        {services.map((service) => {
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8">
+        {services.map((service, i) => {
           return (
             <Card
               key={service.label}
-              className="flex flex-col items-center justify-center bg-neutral-200 shadow-lg text-center h-80"
+              className={`${
+                i === 0 && "md:col-span-2 lg:col-span-1"
+              } flex flex-col items-center justify-center bg-white shadow-lg text-center h-80`}
             >
               {service.icon}
               <CardHeader>

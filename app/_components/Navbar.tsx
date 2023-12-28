@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -10,18 +11,29 @@ const navLinks = [
 
 function Navbar() {
   return (
-    <nav className="flex justify-between h-[84px] items-center px-16">
-      <div className="">
-        <Link href="/">Logo Here</Link>
-      </div>
-      <ul className="flex gap-16">
-        {navLinks.map((navLink) => (
-          <li key={navLink.label}>
-            <Link href={navLink.href}>{navLink.label}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <>
+      {/* DESKTOP NAVBAR */}
+      <nav className="hidden lg:flex justify-between h-[84px] items-center px-16">
+        <div className="">
+          <Link href="/">Logo Here</Link>
+        </div>
+        <ul className="flex gap-16">
+          {navLinks.map((navLink) => (
+            <li key={navLink.label}>
+              <Link href={navLink.href}>{navLink.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* MOBILE NAVBAR */}
+      <nav className="flex lg:hidden justify-between h-[84px] items-center px-4">
+        <div className="">
+          <Link href="/">Logo Here</Link>
+        </div>
+        <Menu size={48} />
+      </nav>
+    </>
   );
 }
 
