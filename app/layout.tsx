@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Libre_Baskerville, League_Spartan } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontLibreBakersville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: "400",
+});
+export const fontLeagueSpartan = League_Spartan({
+  subsets: ["latin"],
+  weight: "700",
+});
 
 export const metadata: Metadata = {
   title: "Selfiebooth Guam",
@@ -17,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={fontLibreBakersville.className}>
         <Navbar />
         {children}
       </body>
