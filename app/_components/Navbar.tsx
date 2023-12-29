@@ -33,10 +33,8 @@ function Navbar() {
               <Link href={navLink.href}>{navLink.label}</Link>
             </li>
           ))}
-          <li>
+          <li className="flex gap-2">
             <LanguageSelect />
-          </li>
-          <li>
             <ToggleTheme />
           </li>
         </ul>
