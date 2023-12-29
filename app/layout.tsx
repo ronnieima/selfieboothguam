@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./_components/Navbar";
 import { fontLibreBakersville } from "@/lib/fonts";
 import { ThemeProvider } from "./_components/ThemeProvider";
+import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
   title: "Selfiebooth Guam",
@@ -25,6 +26,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

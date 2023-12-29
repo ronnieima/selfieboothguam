@@ -9,15 +9,17 @@ import {
 
 function LanguageSelect() {
   return (
-    <Select defaultValue="english">
-      <SelectTrigger className="w-16">
-        <SelectValue placeholder="EN" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="english">EN</SelectItem>
-        <SelectItem value="japanese">JP</SelectItem>
-      </SelectContent>
-    </Select>
+    <div className="">
+      <Select defaultValue="english">
+        <SelectTrigger className="w-16">
+          <SelectValue placeholder="EN" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="english">EN</SelectItem>
+          <SelectItem value="japanese">JP</SelectItem>
+        </SelectContent>
+      </Select>
+    </div>
   );
 }
 

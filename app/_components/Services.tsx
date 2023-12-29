@@ -2,12 +2,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Fingerprint, Presentation, VenetianMask } from "lucide-react";
 import Image from "next/image";
 import { fontLeagueSpartan } from "../../lib/fonts";
+import { url } from "inspector";
 
 const LUCIDE_ICON_SIZES = 64;
 
 const services = [
   {
-    icon: <Fingerprint size={LUCIDE_ICON_SIZES} />,
+    icon: url(),
     label: "Self-serve Touchscreen",
     description: "Text",
   },
@@ -38,26 +39,24 @@ function Services() {
             <Card
               key={service.label}
               className={`${
-                i % 2 !== 0
-                  ? "flex-row-reverse bg-gradient-to-l "
-                  : "bg-gradient-to-r"
-              } flex grid-cols-2  items-start justify-start shadow-none border-none  text-black text-center h-[500px] w-full rounded-full from-blue-200 gap-24  from-10% to-white to-70% p-16`}
+                i % 2 !== 0 && "flex-row-reverse"
+              } flex flex-col items-start justify-start text-foreground text-center h-[500px] w-full rounded-xl bg-card`}
             >
-              <Image
-                src="/test.jpg"
-                className="h-full w-auto rounded-full"
-                width={300}
-                height={400}
-                alt="test"
-              />
               <div className={`text-left`}>
                 <CardHeader>
-                  <CardTitle className="text-4xl ">{service.label}</CardTitle>
+                  <CardTitle className="text-2xl ">{service.label}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>{service.description}</p>
                 </CardContent>
               </div>
+              <Image
+                src="/test.jpg"
+                className="h-[30%] w-full rounded-full"
+                width={300}
+                height={400}
+                alt="test"
+              />
             </Card>
           );
         })}
