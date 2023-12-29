@@ -5,7 +5,7 @@ import { ToggleTheme } from "./ui/ToggleTheme";
 import LanguageSelect from "./ui/LanguageSelect";
 
 const navLinks = [
-  { label: "Services", href: "#" },
+  { label: "Services", href: "#services" },
   { label: "About Us", href: "#" },
   { label: "Pricing", href: "#" },
   { label: "Book Now", href: "#" },

@@ -1,10 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Fingerprint,
-  Presentation,
-  Touchpad,
-  VenetianMask,
-} from "lucide-react";
+import { Fingerprint, Presentation, VenetianMask } from "lucide-react";
+import Image from "next/image";
 import { fontLeagueSpartan } from "../../lib/fonts";
 
 const LUCIDE_ICON_SIZES = 64;
@@ -29,24 +25,39 @@ const services = [
 
 function Services() {
   return (
-    <section className=" py-16  flex flex-col items-center gap-8 max-w-l mx-auto px-4">
+    <section
+      className=" py-16  flex flex-col items-center gap-8 max-w-7xl mx-auto px-4"
+      id="services"
+    >
       <header className="text-center text-4xl md:text-6xl ">
         <h2 className={`${fontLeagueSpartan.className}`}>What We Offer</h2>
       </header>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-16 w-full">
         {services.map((service, i) => {
           return (
             <Card
               key={service.label}
-              className={` flex flex-col items-center justify-center bg-white text-black shadow-lg text-center h-80 w-full`}
+              className={`${
+                i % 2 !== 0
+                  ? "flex-row-reverse bg-gradient-to-l "
+                  : "bg-gradient-to-r"
+              } flex grid-cols-2  items-start justify-start shadow-none border-none  text-black text-center h-[500px] w-full rounded-full from-blue-200 gap-24  from-10% to-white to-70% p-16`}
             >
-              {service.icon}
-              <CardHeader>
-                <CardTitle>{service.label}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>{service.description}</p>
-              </CardContent>
+              <Image
+                src="/test.jpg"
+                className="h-full w-auto rounded-full"
+                width={300}
+                height={400}
+                alt="test"
+              />
+              <div className={`text-left`}>
+                <CardHeader>
+                  <CardTitle className="text-4xl ">{service.label}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{service.description}</p>
+                </CardContent>
+              </div>
             </Card>
           );
         })}

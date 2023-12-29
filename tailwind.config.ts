@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        hero: "url(https://source.unsplash.com/random/2560x1440/?wallpaper,landscape)",
+        hero: "url(/hero.jpg)",
       },
       colors: {
         border: "hsl(var(--border))",
