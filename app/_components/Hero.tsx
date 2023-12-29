@@ -4,9 +4,9 @@ import { Camera } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="grid lg:grid-cols-[95%_5%] h-[50svh] lg:h-[80svh]">
+    <section className="grid lg:grid-cols-[95%_5%] h-[70svh] lg:h-[80svh]">
       <div className="relative bg-hero lg:rounded-r-[3rem]  bg-cover bg-center">
-        <div className="bg-black/50 absolute h-full w-full top-0 p-8 lg:p-32 text-white lg:rounded-r-[3rem] flex flex-col justify-center gap-8">
+        <div className="bg-black/50 absolute h-full w-full top-0 p-8 lg:p-32 text-white lg:rounded-r-[3rem] flex flex-col justify-center lg:gap-8">
           <span className="text-xl flex gap-2">
             <Camera /> Selfiebooth Guam
           </span>

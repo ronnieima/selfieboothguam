@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { ToggleTheme } from "./ui/ToggleTheme";
 
 const navLinks = [
   { label: "Services", href: "#" },
@@ -17,12 +18,13 @@ function Navbar() {
         <div className="">
           <Link href="/">Logo Here</Link>
         </div>
-        <ul className="flex gap-16">
+        <ul className="flex items-center gap-16">
           {navLinks.map((navLink) => (
             <li key={navLink.label}>
               <Link href={navLink.href}>{navLink.label}</Link>
             </li>
           ))}
+          <ToggleTheme />
         </ul>
       </nav>
 
