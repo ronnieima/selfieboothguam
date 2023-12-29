@@ -16,7 +16,9 @@ function Hero() {
             >
               Click, Pose, Smile!
             </h1>
-            <h2 className="text-2xl">Turning Moments into Memories</h2>
+            <h2 className="text-xl">
+              A family-owned rental photobooth service based in Guam
+            </h2>
           </header>
           <Button
             className="w-full lg:w-32 text-foreground"

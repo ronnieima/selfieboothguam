@@ -2,6 +2,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { ToggleTheme } from "./ui/ToggleTheme";
+import LanguageSelect from "./ui/LanguageSelect";
 
 const navLinks = [
   { label: "Services", href: "#" },
@@ -24,6 +25,7 @@ function Navbar() {
               <Link href={navLink.href}>{navLink.label}</Link>
             </li>
           ))}
+          <LanguageSelect />
           <ToggleTheme />
         </ul>
       </nav>

@@ -29,18 +29,16 @@ const services = [
 
 function Services() {
   return (
-    <section className="h-[700px] py-16 lg:p-32 flex flex-col items-center gap-8">
+    <section className=" py-16  flex flex-col items-center gap-8 max-w-l mx-auto px-4">
       <header className="text-center text-4xl md:text-6xl ">
         <h2 className={`${fontLeagueSpartan.className}`}>What We Offer</h2>
       </header>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8">
+      <div className="flex flex-col gap-2 w-full">
         {services.map((service, i) => {
           return (
             <Card
               key={service.label}
-              className={`${
-                i === 0 && "md:col-span-2 lg:col-span-1"
-              } flex flex-col items-center justify-center bg-white text-black shadow-lg text-center h-80`}
+              className={` flex flex-col items-center justify-center bg-white text-black shadow-lg text-center h-80 w-full`}
             >
               {service.icon}
               <CardHeader>
