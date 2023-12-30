@@ -19,7 +19,7 @@ function Navbar() {
           <Link href="/">Logo Here</Link>
         </div>
         <ul className="flex items-center gap-16">
-          <NavLinks className="[&:nth-child(4)]:bg-green-800 [&:nth-child(4)]:text-white [&:nth-child(4)]:px-4 [&:nth-child(4)]:py-2 [&:nth-child(4)]:rounded-2xl text-xl " />
+          <NavLinks className="[&:nth-child(4)]:bg-green-800 [&:nth-child(4)]:text-white [&:nth-child(4)]:px-4 [&:nth-child(4)]:py-2 [&:nth-child(4)]:rounded-2xl text-xl [&:nth-child(4)]:shadow-xl [&:nth-child(4)]:hover:bg-green-800/90" />
           <li className="flex gap-2">
             <LocaleSwitcherSelect />
             <ToggleTheme />
