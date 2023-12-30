@@ -3,14 +3,20 @@ import { fontLeagueSpartan } from "@/lib/fonts";
 import { Camera } from "lucide-react";
 import { useTranslations } from "next-intl";
 import HeroTypingAnimation from "./HeroTypingAnimation";
+import { cn } from "@/lib/utils";
 
 function Hero() {
   const t = useTranslations("Hero");
   return (
     <section className="grid lg:grid-cols-[95%_5%] h-[100svh] lg:h-[80svh] ">
-      <div className="relative bg-hero bg-fixed lg:rounded-r-[3rem]  bg-cover bg-center ">
+      <div className="relative bg-hero lg:bg-fixed lg:rounded-r-[3rem]  bg-cover bg-center ">
         <div className="bg-black/70 absolute h-full w-full lg:rounded-r-[3rem] flex flex-col justify-center items-center lg:items-start">
-          <header className="absolute px-2 py-8 lg:p-32 text-white flex flex-col justify-center items-center lg:items-start gap-8 lg:gap-8 text-center lg:text-left w-[75%]">
+          <header
+            className={cn(
+              "text-center text-white flex flex-col justify-center items-center gap-8 ",
+              "lg:text-left lg:p-32 lg:w-[75%] lg:items-start"
+            )}
+          >
             <span className="text-xl flex gap-2">
               <Camera /> Selfiebooth Guam
             </span>

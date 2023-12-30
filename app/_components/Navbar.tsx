@@ -9,6 +9,8 @@ import Link from "next/link";
 import LocaleSwitcherSelect from "./ui/LocaleSwitcherSelect";
 import { ToggleTheme } from "./ui/ToggleTheme";
 import { useTranslations } from "next-intl";
+import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 function Navbar() {
   const t = useTranslations("Navbar");
@@ -26,9 +28,16 @@ function Navbar() {
           <Link href="/">Logo Here</Link>
         </div>
         <ul className="flex items-center gap-16">
-          {navLinks.map((navLink) => (
+          {navLinks.map((navLink, i) => (
             <li key={navLink.label}>
-              <Link href={navLink.href}>{navLink.label}</Link>
+              <Link
+                href={navLink.href}
+                className={cn({
+                  "bg-green-800 text-white px-4 py-2 rounded-2xl": i === 3,
+                })}
+              >
+                {navLink.label}
+              </Link>
             </li>
           ))}
           <li className="flex gap-2">
@@ -41,7 +50,9 @@ function Navbar() {
       {/* MOBILE NAVBAR */}
       <nav className="flex lg:hidden justify-between h-[84px] items-center px-4 sticky top-0 z-20 bg-background">
         <div className="">
-          <Link href="/">Logo Here</Link>
+          <Link href="/" className={clsx("bg-red-50")}>
+            Logo Here
+          </Link>
         </div>
         <Sheet>
           <SheetTrigger>
