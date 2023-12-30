@@ -17,9 +17,9 @@ function Hero() {
               "lg:text-left lg:p-32  lg:items-start"
             )}
           >
-            <span className="text-xl flex gap-2">
+            {/* <span className="text-xl flex gap-2">
               <Camera /> Selfiebooth Guam
-            </span>
+            </span> */}
 
             <div>
               <h1
