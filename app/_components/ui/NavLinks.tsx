@@ -17,7 +17,7 @@ function NavLinks({ className }: NavLinksProps) {
   return (
     <>
       {navLinks.map((navLink) => (
-        <li key={navLink.label} className={cn(className)}>
+        <li key={navLink.label} className={cn("hover:underline", className)}>
           <Link href={navLink.href}>{navLink.label}</Link>
         </li>
       ))}
