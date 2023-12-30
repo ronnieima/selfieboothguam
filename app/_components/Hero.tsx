@@ -9,7 +9,7 @@ function Hero() {
   const t = useTranslations("Hero");
   return (
     <section className="grid lg:grid-cols-[95%_5%] h-[100svh] lg:h-[80svh] ">
-      <div className="relative bg-hero lg:bg-fixed lg:rounded-r-[3rem]  bg-cover bg-center ">
+      <div className="relative bg-hero lg:bg-fixed lg:rounded-r-[3rem]  bg-cover bg-center dark:border-primary border-4 border-l-0">
         <div className="bg-black/70 absolute h-full w-full lg:rounded-r-[3rem] flex flex-col justify-center items-center lg:items-start">
           <header
             className={cn(
@@ -28,7 +28,7 @@ function Hero() {
                 {t.rich("title", {
                   gradient: (chunks) => (
                     <span
-                      className="bg-gradient-to-r from-[#ef3340] 
+                      className=" bg-gradient-to-r from-[#ef3340] 
               ] to-[#0072ce] inline-block text-transparent bg-clip-text"
                     >
                       {chunks}
@@ -42,7 +42,7 @@ function Hero() {
             </div>
             <Button
               className="w-[300px] lg:w-32 text-foreground mx-auto lg:mx-0"
-              variant={"outline"}
+              variant={"secondary"}
             >
               {t("button")}
             </Button>

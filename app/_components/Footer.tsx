@@ -4,7 +4,7 @@ import { fontLeagueSpartan, fontLibreBakersville } from "@/lib/fonts";
 
 function Footer() {
   return (
-    <footer className="px-16 py-8 h-[400px] bg-neutral-800 text-background grid grid-cols-3">
+    <footer className="lg:px-16 lg:py-8 p-4 h-[400px] bg-neutral-800 text-background grid grid-cols-3">
       <div>
         <h3 className={`${fontLeagueSpartan.className} text-3xl `}>
           Selfiebooth Guam
@@ -13,9 +13,11 @@ function Footer() {
           <NavLinks />
         </ul>
       </div>
-      <span className="self-end justify-self-center">
-        Copyright 2023 | Developed by Ronnie Kaito Imagawa
-      </span>
+      <div className="self-end justify-self-center col-span-3 text-center">
+        <span className="text-xs">
+          Developed by Ronnie Kaito Imagawa <br /> Copyright 2023
+        </span>
+      </div>
     </footer>
   );
 }
