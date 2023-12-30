@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "./_components/Navbar";
+import "../globals.css";
+import Navbar from "../_components/Navbar";
 import { fontLibreBakersville } from "@/lib/fonts";
-import { ThemeProvider } from "./_components/ThemeProvider";
-import Footer from "./_components/Footer";
+import { ThemeProvider } from "../_components/ThemeProvider";
+import Footer from "../_components/Footer";
 
 export const metadata: Metadata = {
   title: "Selfiebooth Guam",
@@ -12,11 +12,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={fontLibreBakersville.className}>
         <ThemeProvider
           attribute="class"

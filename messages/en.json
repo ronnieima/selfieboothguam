@@ -1,0 +1,16 @@
+{
+  "Navbar": {
+    "services": "Service",
+    "aboutUs": "About Us",
+    "pricing": "Pricing",
+    "bookNow": "Book Now"
+  },
+  "Hero": {
+    "title": "A <gradient>Guam-based</gradient><br></br> Rental Photobooth Service.",
+    "button": "Book Now",
+    "asideText": "Photobooth Service"
+  },
+  "Services": {
+    "header": "What We Offer"
+  }
+}

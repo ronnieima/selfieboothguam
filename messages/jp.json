@@ -1,0 +1,16 @@
+{
+  "Navbar": {
+    "services": "商品紹介",
+    "aboutUs": "事業にについて",
+    "pricing": "価格情報",
+    "bookNow": "予約"
+  },
+  "Hero": {
+    "title": "<gradient>グアム</gradient>に於いての<br></br>レンタルフォトブース",
+    "button": "予約",
+    "asideText": "フォトブース サービス"
+  },
+  "Services": {
+    "header": "商品紹介"
+  }
+}

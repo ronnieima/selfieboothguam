@@ -3,6 +3,7 @@ import { Fingerprint, Presentation, VenetianMask } from "lucide-react";
 import Image from "next/image";
 import { fontLeagueSpartan } from "../../lib/fonts";
 import { url } from "inspector";
+import { useTranslations } from "next-intl";
 
 const LUCIDE_ICON_SIZES = 64;
 
@@ -25,13 +26,14 @@ const services = [
 ];
 
 function Services() {
+  const t = useTranslations("Services");
   return (
     <section
       className=" py-16  flex flex-col items-center gap-8 max-w-7xl mx-auto px-4"
       id="services"
     >
       <header className="text-center text-4xl md:text-6xl ">
-        <h2 className={`${fontLeagueSpartan.className}`}>What We Offer</h2>
+        <h2 className={`${fontLeagueSpartan.className}`}>{t("header")}</h2>
       </header>
       <div className="flex flex-col gap-16 w-full">
         {services.map((service, i) => {

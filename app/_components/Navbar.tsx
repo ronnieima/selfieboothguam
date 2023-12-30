@@ -1,25 +1,23 @@
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import React from "react";
-import { ToggleTheme } from "./ui/ToggleTheme";
-import LanguageSelect from "./ui/LanguageSelect";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "About Us", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Book Now", href: "#" },
-];
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import LocaleSwitcherSelect from "./ui/LocaleSwitcherSelect";
+import { ToggleTheme } from "./ui/ToggleTheme";
+import { useTranslations } from "next-intl";
 
 function Navbar() {
+  const t = useTranslations("Navbar");
+  const navLinks = [
+    { label: t("services"), href: "#services" },
+    { label: t("aboutUs"), href: "#" },
+    { label: t("pricing"), href: "#" },
+    { label: t("bookNow"), href: "#" },
+  ];
   return (
     <>
       {/* DESKTOP NAVBAR */}
@@ -34,7 +32,7 @@ function Navbar() {
             </li>
           ))}
           <li className="flex gap-2">
-            <LanguageSelect />
+            <LocaleSwitcherSelect />
             <ToggleTheme />
           </li>
         </ul>
