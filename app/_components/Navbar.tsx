@@ -8,18 +8,9 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import LocaleSwitcherSelect from "./ui/LocaleSwitcherSelect";
 import { ToggleTheme } from "./ui/ToggleTheme";
-import { useTranslations } from "next-intl";
-import clsx from "clsx";
-import { cn } from "@/lib/utils";
+import NavLinks from "./ui/NavLinks";
 
 function Navbar() {
-  const t = useTranslations("Navbar");
-  const navLinks = [
-    { label: t("services"), href: "#services" },
-    { label: t("aboutUs"), href: "#" },
-    { label: t("pricing"), href: "#" },
-    { label: t("bookNow"), href: "#" },
-  ];
   return (
     <>
       {/* DESKTOP NAVBAR */}
@@ -28,18 +19,7 @@ function Navbar() {
           <Link href="/">Logo Here</Link>
         </div>
         <ul className="flex items-center gap-16">
-          {navLinks.map((navLink, i) => (
-            <li key={navLink.label}>
-              <Link
-                href={navLink.href}
-                className={cn({
-                  "bg-green-800 text-white px-4 py-2 rounded-2xl": i === 3,
-                })}
-              >
-                {navLink.label}
-              </Link>
-            </li>
-          ))}
+          <NavLinks className="[&:nth-child(4)]:bg-green-800 [&:nth-child(4)]:text-white [&:nth-child(4)]:px-4 [&:nth-child(4)]:py-2 [&:nth-child(4)]:rounded-2xl" />
           <li className="flex gap-2">
             <LocaleSwitcherSelect />
             <ToggleTheme />
@@ -59,13 +39,7 @@ function Navbar() {
           <SheetContent side="right">
             <SheetHeader></SheetHeader>
             <ul className="flex flex-col gap-8 mt-32">
-              {navLinks.map((navLink) => (
-                <li key={navLink.label}>
-                  <Link href={navLink.href} className="text-4xl ">
-                    {navLink.label}
-                  </Link>
-                </li>
-              ))}
+              <NavLinks className=" text-4xl " />
               <li className="flex gap-2">
                 <LocaleSwitcherSelect />
                 <ToggleTheme />
