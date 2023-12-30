@@ -1,9 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Fingerprint, Presentation, VenetianMask } from "lucide-react";
+import { url } from "inspector";
+import { Presentation, VenetianMask } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { fontLeagueSpartan } from "../../lib/fonts";
-import { url } from "inspector";
-import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
 const LUCIDE_ICON_SIZES = 64;
 
@@ -29,40 +30,35 @@ function Services() {
   const t = useTranslations("Services");
   return (
     <section
-      className=" py-16  flex flex-col items-center gap-8 max-w-7xl mx-auto px-4"
+      className=" py-16  flex flex-col items-center gap-32 max-w-[100rem] mx-auto px-4"
       id="services"
     >
       <header className="text-center text-4xl md:text-6xl ">
         <h2 className={`${fontLeagueSpartan.className}`}>{t("header")}</h2>
       </header>
-      <div className="flex flex-col gap-16 w-full">
-        {services.map((service, i) => {
-          return (
-            <Card
-              key={service.label}
-              className={`${
-                i % 2 !== 0 && "flex-row-reverse"
-              } flex flex-col items-start justify-start text-foreground text-center h-[500px] w-full rounded-xl bg-card`}
-            >
-              <div className={`text-left`}>
-                <CardHeader>
-                  <CardTitle className="text-2xl ">{service.label}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>{service.description}</p>
-                </CardContent>
-              </div>
-              <Image
-                src="/test.jpg"
-                className="h-[30%] w-full rounded-full"
-                width={300}
-                height={400}
-                alt="test"
-              />
-            </Card>
-          );
-        })}
-      </div>
+      {services.map((service) => {
+        return (
+          <div
+            key={service.label}
+            className={cn(
+              `flex justify-between w-full `,
+              "odd:flex-row-reverse "
+            )}
+          >
+            <div className="p-32">
+              <h2 className="text-3xl font-bold">{service.label}</h2>
+              <p>{service.description}</p>
+            </div>
+            <Image
+              src="/test.jpg"
+              alt={service.label}
+              width={600}
+              height={400}
+              className="rounded-3xl"
+            />
+          </div>
+        );
+      })}
     </section>
   );
 }
