@@ -28,7 +28,7 @@ function Navbar() {
       </nav>
 
       {/* MOBILE NAVBAR */}
-      <nav className="lg:hidden flex justify-between items-center px-4 h-[84px] ">
+      <nav className="lg:hidden flex justify-between items-center px-4 h-[84px]  sticky top-0 z-40 bg-background/90">
         <div>
           <Link href="/">Logo Here</Link>
         </div>

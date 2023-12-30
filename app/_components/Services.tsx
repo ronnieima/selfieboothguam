@@ -36,9 +36,9 @@ function Services() {
   const t = useTranslations("Services");
 
   return (
-    <section className="py-16  bg-secondary    px-4" id="services">
+    <section className="py-16  bg-secondary scroll-m-16   px-4" id="services">
       <div className="max-w-[100rem] mx-auto flex flex-col items-center gap-32">
-        <header className="bg-background rounded-full">
+        <header className=" rounded-full underline-offset-8 underline">
           <h2
             className={`${fontLeagueSpartan.className} text-center text-4xl md:text-6xl `}
           >

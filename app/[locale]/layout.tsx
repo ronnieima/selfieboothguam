@@ -18,8 +18,8 @@ export default function RootLayout({
   params: { locale: string };
 }) {
   return (
-    <html lang={locale}>
-      <body className={fontLibreBakersville.className}>
+    <html lang={locale} className="scroll-smooth bg-background">
+      <body className={`${fontLibreBakersville.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
