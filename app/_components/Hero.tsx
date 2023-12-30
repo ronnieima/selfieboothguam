@@ -8,13 +8,13 @@ import { cn } from "@/lib/utils";
 function Hero() {
   const t = useTranslations("Hero");
   return (
-    <section className="grid lg:grid-cols-[95%_5%] h-[100svh] lg:h-[80svh] ">
-      <div className="relative bg-hero lg:bg-fixed lg:rounded-r-[3rem]  bg-cover bg-center dark:border-primary border-4 border-l-0">
+    <section className="grid lg:grid-cols-[95%_5%] h-[100svh] lg:h-[80svh] pb-20">
+      <div className="relative bg-hero lg:bg-fixed lg:rounded-r-[3rem]  bg-cover bg-center lg:dark:border-primary lg:border-4 border-l-0">
         <div className="bg-black/70 absolute h-full w-full lg:rounded-r-[3rem] flex flex-col justify-center items-center lg:items-start">
           <header
             className={cn(
               "text-center text-white flex flex-col justify-center items-center gap-8 ",
-              "lg:text-left lg:p-32 lg:w-[75%] lg:items-start"
+              "lg:text-left lg:p-32  lg:items-start"
             )}
           >
             <span className="text-xl flex gap-2">
