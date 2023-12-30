@@ -48,11 +48,9 @@ function Navbar() {
       </nav>
 
       {/* MOBILE NAVBAR */}
-      <nav className="flex lg:hidden justify-between h-[84px] items-center px-4 sticky top-0 z-20 bg-background">
-        <div className="">
-          <Link href="/" className={clsx("bg-red-50")}>
-            Logo Here
-          </Link>
+      <nav className="lg:hidden flex justify-between items-center px-4 h-[84px] ">
+        <div>
+          <Link href="/">Logo Here</Link>
         </div>
         <Sheet>
           <SheetTrigger>
@@ -68,6 +66,10 @@ function Navbar() {
                   </Link>
                 </li>
               ))}
+              <li className="flex gap-2">
+                <LocaleSwitcherSelect />
+                <ToggleTheme />
+              </li>
             </ul>
           </SheetContent>
         </Sheet>
