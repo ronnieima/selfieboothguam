@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={fontLibreBakersville.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
