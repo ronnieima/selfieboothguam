@@ -1,6 +1,7 @@
 import { fontLeagueSpartan } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import NavLinks from "./ui/NavLinks";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -25,7 +26,11 @@ function Footer() {
         )}
       >
         <span className="text-xs">
-          Developed by Ronnie Kaito Imagawa <br /> Copyright 2023
+          Developed by{" "}
+          <Link href="https://www.imagawa.dev" target="_blank">
+            Ronnie Kaito Imagawa
+          </Link>
+          <br /> Copyright 2023
         </span>
       </div>
     </footer>
