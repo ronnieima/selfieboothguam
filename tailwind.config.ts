@@ -22,7 +22,7 @@ const config = {
         checkmark: 'url("/checkmark.png")',
       },
       backgroundImage: {
-        hero: "url(/hero.jpg)",
+        hero: "url(https://res.cloudinary.com/dfpbpun9z/image/upload/v1704028730/selfieboothguam/hero.jpg)",
       },
       colors: {
         border: "hsl(var(--border))",

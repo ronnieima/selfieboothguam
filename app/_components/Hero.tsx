@@ -4,12 +4,21 @@ import { Camera } from "lucide-react";
 import { useTranslations } from "next-intl";
 import HeroTypingAnimation from "./HeroTypingAnimation";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 function Hero() {
   const t = useTranslations("Hero");
   return (
-    <section className="grid lg:grid-cols-[95%_5%] h-[100svh] lg:h-[80svh] lg:pb-20">
-      <div className="relative bg-hero lg:bg-fixed lg:rounded-r-[3rem]  bg-cover bg-center lg:dark:border-primary lg:border-4 lg:border-l-0">
+    <section className="grid lg:grid-cols-[95%_5%] h-[100svh] lg:h-[80svh] lg:pb-20 ">
+      <div className=" relative   lg:rounded-r-[3rem]  lg:dark:border-primary lg:border-4 lg:border-l-0">
+        <Image
+          className=" lg:rounded-r-[3rem] "
+          src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1704028730/selfieboothguam/hero.jpg"
+          fill
+          alt="hero"
+          objectFit="cover"
+          priority
+        />
         <div className="bg-black/70 absolute h-full w-full lg:rounded-r-[3rem] flex flex-col justify-center items-center lg:items-start">
           <header
             className={cn(

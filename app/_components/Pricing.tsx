@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { fontLibreBakersville } from "@/lib/fonts";
+import { fontLeagueSpartan, fontLibreBakersville } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { prices } from "@/messages/content";
 import { Separator } from "@radix-ui/react-select";
@@ -30,24 +30,34 @@ function Pricing() {
         {prices.map((price) => (
           <Card
             key={price.timeInHours}
-            className="w-full rounded-2xl flex flex-col items-center gap-16"
+            className={cn(
+              "p-4 shadow-xl rounded-none first:rounded-t-xl last:rounded-b-xl",
+              "lg:first:rounded-r-none lg:first:rounded-l-xl lg:last:rounded-r-xl lg:last:rounded-l-none"
+            )}
           >
-            <CardHeader>
-              <CardTitle className="text-center">
-                <p className={cn("text-5xl", "lg:text-8xl")}>
-                  {price.timeInHours}
+            <CardHeader className="self-start">
+              <CardTitle>
+                <p
+                  className={cn(
+                    `${fontLeagueSpartan.className} text-3xl font-thin`,
+                    `lg:text-4xl`
+                  )}
+                >
+                  {`${price.timeInHours} Hours`}
                 </p>
-                <p>Hours</p>
+                <p
+                  className={cn(
+                    `${fontLeagueSpartan.className} text-4xl`,
+                    "lg:text-5xl"
+                  )}
+                >{`$${price.priceInUSD.toFixed(2)}`}</p>
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <p>{`$${price.priceInUSD.toFixed(2)}`}</p>
-            </CardContent>
-            <CardFooter>
-              <ol className={`list-image-checkmark pl-8`}>
-                <li>DVD containing all event photos</li>
+            <CardContent className="flex flex-col">
+              <ol className={`list-image-checkmark `}>
+                <li className="text-sm">DVD containing all event photos</li>
               </ol>
-            </CardFooter>
+            </CardContent>
           </Card>
         ))}
       </div>
