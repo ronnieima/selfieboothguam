@@ -6,5 +6,5 @@ export const fontLibreBakersville = Libre_Baskerville({
 });
 export const fontLeagueSpartan = League_Spartan({
   subsets: ["latin"],
-  weight: "700",
+  weight: ["400", "700"],
 });
