@@ -37,7 +37,7 @@ function Services() {
 
   return (
     <section className="py-16  bg-secondary scroll-m-16   px-4" id="services">
-      <div className="max-w-[100rem] mx-auto flex flex-col items-center gap-32">
+      <div className="max-w-[100rem] mx-auto flex flex-col items-center gap-16">
         <header className=" rounded-full underline-offset-8 underline">
           <h2
             className={`${fontLeagueSpartan.className} text-center text-4xl md:text-6xl `}
