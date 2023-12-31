@@ -9,9 +9,9 @@ function NavLinks({ className }: NavLinksProps) {
   const t = useTranslations("Navbar");
   const navLinks = [
     { label: t("services"), href: "#services" },
-    { label: t("aboutUs"), href: "#" },
-    { label: t("pricing"), href: "#" },
-    { label: t("bookNow"), href: "#" },
+    { label: t("aboutUs"), href: "#aboutUs" },
+    { label: t("pricing"), href: "#pricing" },
+    { label: t("bookNow"), href: "#bookNow" },
   ];
 
   return (
