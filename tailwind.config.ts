@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/checkmark.png")',
+      },
       backgroundImage: {
         hero: "url(/hero.jpg)",
       },
