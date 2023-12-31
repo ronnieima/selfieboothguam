@@ -19,6 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang={locale} className="scroll-smooth bg-background">
+      <head>
+        <link
+          rel="alternate"
+          hrefLang="jp"
+          href="https://www.selfieboothguam.com/jp"
+        />
+      </head>
       <body className={`${fontLibreBakersville.className}`}>
         <ThemeProvider
           attribute="class"
