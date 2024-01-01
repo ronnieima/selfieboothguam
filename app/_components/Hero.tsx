@@ -1,22 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { fontLeagueSpartan } from "@/lib/fonts";
-import { Camera } from "lucide-react";
-import { useTranslations } from "next-intl";
-import HeroTypingAnimation from "./HeroTypingAnimation";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import HeroTypingAnimation from "./HeroTypingAnimation";
 
 function Hero() {
   const t = useTranslations("Hero");
   return (
-    <section className="grid lg:grid-cols-[95%_5%] h-[100svh] lg:h-[80svh] lg:pb-20 ">
+    <section className="grid lg:grid-cols-[95%_5%] min-h-[100svh] lg:min-h-[100svh] lg:pb-20 ">
       <div className=" relative   lg:rounded-r-[3rem]  lg:dark:border-primary lg:border-4 lg:border-l-0">
         <Image
           className=" lg:rounded-r-[3rem] "
           src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1704028730/selfieboothguam/hero.jpg"
           fill
           alt="hero"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           priority
         />
         <div className="bg-black/70 absolute h-full w-full lg:rounded-r-[3rem] flex flex-col justify-center items-center lg:items-start">
@@ -32,7 +30,7 @@ function Hero() {
 
             <div>
               <h1
-                className={`${fontLeagueSpartan.className} text-6xl md:text-8xl font-semibold tracking-tight  `}
+                className={` text-6xl md:text-8xl font-semibold tracking-tight  `}
               >
                 {t.rich("title", {
                   gradient: (chunks) => (
@@ -59,7 +57,7 @@ function Hero() {
         </div>
       </div>
       <aside
-        className={`${fontLeagueSpartan.className} hidden lg:flex text-4xl lg:text-6xl font-bold cursor-vertical-text  items-center justify-center gap-4 uppercase w-full text-nowrap`}
+        className={` hidden lg:flex text-4xl lg:text-6xl font-bold cursor-vertical-text  items-center justify-center gap-4 uppercase w-full text-nowrap`}
         style={{ writingMode: "vertical-rl" }}
       >
         {t("asideText")}

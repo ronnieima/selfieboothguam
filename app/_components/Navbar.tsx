@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
       {/* DESKTOP NAVBAR */}
-      <nav className="hidden lg:flex justify-between h-[84px] items-center px-16 sticky top-0 z-40 bg-background ">
+      <nav className="hidden lg:flex justify-between h-[64px] items-center px-16 sticky top-0 z-40 bg-background ">
         <div className="">
           <Link href="/" className="uppercase">
             Selfiebooth Guam
@@ -30,7 +30,7 @@ function Navbar() {
       </nav>
 
       {/* MOBILE NAVBAR */}
-      <nav className="lg:hidden flex justify-between items-center px-4 h-[84px]  sticky top-0 z-40 bg-background/90">
+      <nav className="lg:hidden flex justify-between items-center px-4 h-[3rem]  sticky top-0 z-40 bg-background">
         <div>
           <Link href="/" className="uppercase">
             Selfiebooth Guam

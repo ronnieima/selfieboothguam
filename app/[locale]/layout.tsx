@@ -1,9 +1,9 @@
+import { inter } from "@/lib/fonts";
 import type { Metadata } from "next";
-import "../globals.css";
-import Navbar from "../_components/Navbar";
-import { fontLibreBakersville } from "@/lib/fonts";
-import { ThemeProvider } from "../_components/ThemeProvider";
 import Footer from "../_components/Footer";
+import Navbar from "../_components/Navbar";
+import { ThemeProvider } from "../_components/ThemeProvider";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Selfiebooth Guam",
@@ -26,7 +26,7 @@ export default function RootLayout({
           href="https://www.selfieboothguam.com/jp"
         />
       </head>
-      <body className={`${fontLibreBakersville.className}`}>
+      <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
