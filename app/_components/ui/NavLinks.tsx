@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { socialLinks } from "@/messages/content";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
@@ -10,14 +11,19 @@ function NavLinks({ className }: NavLinksProps) {
   const navLinks = [
     { label: t("services"), href: "#services" },
     { label: t("pricing"), href: "#pricing" },
-    { label: t("bookNow"), href: "#bookNow" },
+    { label: t("bookNow"), href: socialLinks.facebook },
   ];
 
   return (
     <>
       {navLinks.map((navLink) => (
         <li key={navLink.label} className={cn("hover:underline", className)}>
-          <Link href={navLink.href}>{navLink.label}</Link>
+          <Link
+            href={navLink.href}
+            target={navLink.href === socialLinks.facebook ? "_blank" : ""}
+          >
+            {navLink.label}
+          </Link>
         </li>
       ))}
     </>

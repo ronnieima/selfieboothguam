@@ -3,16 +3,17 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import HeroTypingAnimation from "./HeroTypingAnimation";
-import { imageUrls } from "@/messages/content";
+import { imageLinks, socialLinks } from "@/messages/content";
+import Link from "next/link";
 
 function Hero() {
   const t = useTranslations("Hero");
   return (
     <section className="grid lg:grid-cols-[95%_5%] min-h-[100svh]  lg:pb-20 ">
-      <div className=" relative lg:rounded-r-[3rem] lg:max-h-[80svh] lg:dark:border-gray-600 lg:border-4 lg:border-l-0">
+      <div className="relative lg:rounded-r-[3rem] lg:max-h-[85svh] lg:dark:border-gray-600 lg:border-4 lg:border-l-0">
         <Image
           className=" lg:rounded-r-[3rem] "
-          src={imageUrls.hero}
+          src={imageLinks.hero}
           fill
           alt="hero"
           style={{ objectFit: "cover" }}
@@ -49,16 +50,19 @@ function Hero() {
               <HeroTypingAnimation />
             </div>
             <Button
+              asChild
               className="w-[300px] lg:w-32 text-foreground mx-auto lg:mx-0"
               variant={"secondary"}
             >
-              {t("button")}
+              <Link href={socialLinks.facebook} target="_blank">
+                {t("button")}
+              </Link>
             </Button>
           </header>
         </div>
       </div>
       <aside
-        className={` hidden lg:flex text-4xl lg:text-6xl font-bold cursor-vertical-text  items-center justify-center gap-4 uppercase w-full text-nowrap`}
+        className={` hidden lg:flex text-4xl lg:text-5xl font-bold cursor-vertical-text  items-center justify-center gap-4 uppercase w-full text-nowrap`}
         style={{ writingMode: "vertical-rl" }}
       >
         {t("asideText")}

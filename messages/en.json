@@ -14,15 +14,15 @@
     "header": "What We Offer",
     "service1": {
       "header": "Self-serve Touchscreen",
-      "description": ""
+      "description": "Capture moments your way with our Self-serve Touchscreen. Snap and share photos effortlessly using the convenience of a touchscreen."
     },
     "service2": {
       "header": "Custom Layouts",
-      "description": ""
+      "description": "Unique memories in every frame with our personalized layouts. Each event receives its own special touch, ensuring your photos match the spirit of the occasion."
     },
     "service3": {
       "header": "Themed Props",
-      "description": ""
+      "description": "Elevate your event with themed props. Each occasion comes to life with a unique collection of props, adding fun and creativity to every photo."
     }
   }
 }
