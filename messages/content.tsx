@@ -1,31 +1,14 @@
 import { yearsSince } from "@/lib/utils";
-import { Fingerprint, Layout, VenetianMask } from "lucide-react";
 
-const LUCIDE_ICON_SIZES = 64;
+const CLOUDINARY_URL =
+  "https://res.cloudinary.com/dfpbpun9z/image/upload/f_auto,q_auto/v1/selfieboothguam/";
+export const imageUrls = {
+  props: CLOUDINARY_URL + "props",
+  photobooth: CLOUDINARY_URL + "photobooth1",
+  layout: CLOUDINARY_URL + "layout",
+  hero: CLOUDINARY_URL + "hero",
+};
 
-export const services = [
-  {
-    image: "",
-    icon: <Fingerprint size={LUCIDE_ICON_SIZES} />,
-    label: "Self-serve Touchscreen",
-    description:
-      "  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit minima autem iste provident modi eveniet quos dolorem voluptatem magnam inventore aperiam natus, reiciendis laborum distinctio qui atque minus nobis, debitis quas corporis nihil delectus repudiandae.",
-  },
-  {
-    image: "",
-    icon: <Layout size={LUCIDE_ICON_SIZES} />,
-    label: "Custom Layouts",
-    description:
-      "  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit minima autem iste provident modi eveniet quos dolorem voluptatem magnam inventore aperiam natus, reiciendis laborum distinctio qui atque minus nobis, debitis quas corporis nihil delectus repudiandae.",
-  },
-  {
-    image: "",
-    icon: <VenetianMask size={LUCIDE_ICON_SIZES} />,
-    label: "Themed Props",
-    description:
-      "  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit minima autem iste provident modi eveniet quos dolorem voluptatem magnam inventore aperiam natus, reiciendis laborum distinctio qui atque minus nobis, debitis quas corporis nihil delectus repudiandae.",
-  },
-];
 const FOUNDED_YEAR = 2014;
 const yearsInOperation = yearsSince(FOUNDED_YEAR);
 export const achievements = [

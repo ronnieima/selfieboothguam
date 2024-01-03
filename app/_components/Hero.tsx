@@ -3,15 +3,16 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import HeroTypingAnimation from "./HeroTypingAnimation";
+import { imageUrls } from "@/messages/content";
 
 function Hero() {
   const t = useTranslations("Hero");
   return (
-    <section className="grid lg:grid-cols-[95%_5%] min-h-[100svh] lg:min-h-[100svh] lg:pb-20 ">
-      <div className=" relative   lg:rounded-r-[3rem]  lg:dark:border-primary lg:border-4 lg:border-l-0">
+    <section className="grid lg:grid-cols-[95%_5%] min-h-[100svh]  lg:pb-20 ">
+      <div className=" relative lg:rounded-r-[3rem] lg:max-h-[80svh] lg:dark:border-gray-600 lg:border-4 lg:border-l-0">
         <Image
           className=" lg:rounded-r-[3rem] "
-          src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1704028730/selfieboothguam/hero.jpg"
+          src={imageUrls.hero}
           fill
           alt="hero"
           style={{ objectFit: "cover" }}
