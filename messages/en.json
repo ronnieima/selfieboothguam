@@ -11,6 +11,18 @@
     "asideText": "Photobooth Service"
   },
   "Services": {
-    "header": "What We Offer"
+    "header": "What We Offer",
+    "service1": {
+      "header": "Self-serve Touchscreen",
+      "description": ""
+    },
+    "service2": {
+      "header": "Custom Layouts",
+      "description": ""
+    },
+    "service3": {
+      "header": "Themed Props",
+      "description": ""
+    }
   }
 }

@@ -12,6 +12,18 @@
     "asideText": "フォトブース サービス"
   },
   "Services": {
-    "header": "商品紹介"
+    "header": "商品紹介",
+    "service1": {
+      "header": "セルフサービスのタッチスクリーン",
+      "description": ""
+    },
+    "service2": {
+      "header": "カスタムレイアウト",
+      "description": ""
+    },
+    "service3": {
+      "header": "小道具",
+      "description": ""
+    }
   }
 }
