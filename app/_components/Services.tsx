@@ -55,15 +55,17 @@ function Services() {
                 )}
               >
                 {service.icon}
-                <h2 className="text-3xl font-bold">{service.label}</h2>
-                <p className={`text-xl`}>{service.description}</p>
+                <h2 className="text-6xl font-bold">{service.label}</h2>
+                <p className={`text-xl text-muted-foreground`}>
+                  {service.description}
+                </p>
               </header>
               <Image
                 src={service.image}
                 alt={service.label}
                 width={600}
                 height={400}
-                className="rounded-3xl shadow-lg lg:order-2"
+                className="rounded-3xl shadow-lg lg:order-2 w-auto h-auto"
               />
             </section>
           );

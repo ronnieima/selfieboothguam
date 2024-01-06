@@ -11,7 +11,7 @@ function AchievmentsList() {
             key={achievement.label}
             className={cn("w-full flex flex-col items-center")}
           >
-            <h3 className={cn("text-5xl font-semibold")}>
+            <h3 className={cn("text-8xl font-semibold")}>
               {achievement.metric}
             </h3>
             <span className="text-lg text-center font-light">
