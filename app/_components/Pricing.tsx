@@ -1,6 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { prices } from "@/messages/content";
 import PriceCards from "./ui/PriceCards";
 
 function Pricing() {
@@ -11,7 +9,7 @@ function Pricing() {
     >
       <header className="flex flex-col items-center">
         <h2 className={` text-center text-4xl md:text-6xl `}>Pricing</h2>
-        <span>Billed hourly</span>
+        <span className="text-muted-foreground">Billed hourly</span>
       </header>
       <div
         className={cn(
@@ -21,9 +19,6 @@ function Pricing() {
       >
         <PriceCards />
       </div>
-      {/* <Card>
-        <CardContent>Test</CardContent>
-      </Card> */}
     </section>
   );
 }
