@@ -1,8 +1,22 @@
-import { cn } from "@/lib/utils";
+import { cn, yearsSince } from "@/lib/utils";
 import { achievements } from "@/messages/content";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 function AchievmentsList() {
+  const t = useTranslations("Achievements");
+  const FOUNDED_YEAR = 2014;
+  const yearsInOperation = yearsSince(FOUNDED_YEAR);
+  const achievements = [
+    {
+      metric: yearsInOperation,
+      label: t("achievement1"),
+    },
+    {
+      metric: "100+",
+      label: t("achievement2"),
+    },
+  ];
   return (
     <>
       {achievements.map((achievement) => {

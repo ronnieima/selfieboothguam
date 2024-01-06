@@ -10,6 +10,10 @@
     "button": "Book Now",
     "asideText": "Photobooth Service"
   },
+  "Achievements": {
+    "achievement1": "years of service (established 2014)",
+    "achievement2": "events served"
+  },
   "Services": {
     "header": "What We Offer",
     "service1": {

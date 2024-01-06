@@ -14,19 +14,6 @@ export const imageLinks = {
   hero: CLOUDINARY_URL + "hero",
 };
 
-const FOUNDED_YEAR = 2014;
-const yearsInOperation = yearsSince(FOUNDED_YEAR);
-export const achievements = [
-  {
-    metric: yearsInOperation,
-    label: `years of service (established 2014)`,
-  },
-  {
-    metric: "100+",
-    label: "events served",
-  },
-];
-
 export const prices = [
   { timeInHours: 2, priceInUSD: 250.0 },
   { timeInHours: 3, priceInUSD: 320.0 },

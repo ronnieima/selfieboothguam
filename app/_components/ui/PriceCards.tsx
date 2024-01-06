@@ -1,8 +1,11 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { prices } from "@/messages/content";
+import { useTranslations } from "next-intl";
 
 function PriceCards() {
+  const t = useTranslations("Pricing");
+
   return (
     <>
       {prices.map((price) => (
@@ -16,7 +19,7 @@ function PriceCards() {
           <CardHeader className="self-start">
             <CardTitle>
               <p className={cn(`text-3xl font-thin`, `lg:text-4xl`)}>
-                {`${price.timeInHours} Hours`}
+                {`${price.timeInHours} ${t("hours")}`}
               </p>
               <p
                 className={cn(` text-4xl`, "lg:text-5xl")}
@@ -25,7 +28,7 @@ function PriceCards() {
           </CardHeader>
           <CardContent className="flex flex-col">
             <ol className={`list-image-checkmark `}>
-              <li className="text-sm">DVD containing all event photos</li>
+              <li className="text-sm">{t("DVD")}</li>
             </ol>
           </CardContent>
         </Card>

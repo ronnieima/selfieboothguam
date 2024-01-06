@@ -11,9 +11,7 @@ function Pricing() {
     >
       <header className="flex flex-col items-center">
         <h2 className={` text-center text-4xl md:text-6xl `}>{t("header")}</h2>
-        <span>{t("subtitle")}</span>
-        <h2 className={` text-center text-4xl md:text-6xl `}>Pricing</h2>
-        <span className="text-muted-foreground">Billed hourly</span>
+        <span className="text-muted-foreground">{t("subtitle")}</span>
       </header>
       <div
         className={cn(

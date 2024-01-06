@@ -1,6 +1,7 @@
 import React from "react";
 import AchievmentsList from "./ui/AchievmentsList";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 function Achievements() {
   return (

@@ -11,6 +11,10 @@
     "button": "予約",
     "asideText": "フォトブース サービス"
   },
+  "Achievements": {
+    "achievement1": "勤続年数（2014年）",
+    "achievement2": "のイベントに対応"
+  },
   "Services": {
     "header": "商品紹介",
     "service1": {
