@@ -24,5 +24,11 @@
       "header": "Themed Props",
       "description": "Elevate your event with themed props. Each occasion comes to life with a unique collection of props, adding fun and creativity to every photo."
     }
+  },
+  "Pricing": {
+    "header": "Pricing",
+    "subtitle": "Billed hourly",
+    "hours": "Hours",
+    "DVD": "DVD containing all event photos"
   }
 }
