@@ -1,5 +1,4 @@
 import { cn, yearsSince } from "@/lib/utils";
-import { achievements } from "@/messages/content";
 import { useTranslations } from "next-intl";
 import React from "react";
 

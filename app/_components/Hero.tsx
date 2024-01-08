@@ -13,7 +13,7 @@ function Hero() {
       <div className="relative lg:rounded-r-[3rem] lg:max-h-[85svh] lg:dark:border-gray-600 lg:border-4 lg:border-l-0">
         <Image
           className=" lg:rounded-r-[3rem] "
-          src={imageLinks.hero}
+          src="/hero.jpg"
           fill
           alt="hero"
           style={{ objectFit: "cover" }}
@@ -26,10 +26,6 @@ function Hero() {
               "lg:text-left lg:p-32  lg:items-start"
             )}
           >
-            {/* <span className="text-xl flex gap-2">
-              <Camera /> Selfiebooth Guam
-            </span> */}
-
             <div>
               <h1
                 className={` text-6xl md:text-8xl font-semibold tracking-tight  `}

@@ -12,19 +12,19 @@ function Services() {
 
   const services = [
     {
-      image: imageLinks.photobooth,
+      image: "/photobooth1.png",
       icon: <Fingerprint size={LUCIDE_ICON_SIZES} />,
       label: t("service1.header"),
       description: t("service1.description"),
     },
     {
-      image: imageLinks.layout,
+      image: "/layout.jpg",
       icon: <Layout size={LUCIDE_ICON_SIZES} />,
       label: t("service2.header"),
       description: t("service2.description"),
     },
     {
-      image: imageLinks.props,
+      image: "/props.png",
       icon: <VenetianMask size={LUCIDE_ICON_SIZES} />,
       label: t("service3.header"),
       description: t("service3.description"),

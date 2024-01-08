@@ -9,7 +9,7 @@ import {
 import { Globe } from "lucide-react";
 import { useLocale } from "next-intl";
 import { createSharedPathnamesNavigation } from "next-intl/navigation";
-import { ReactNode, useTransition } from "react";
+import { useTransition } from "react";
 export const locales = ["en", "de"] as const;
 export const localePrefix = "always"; // Default
 export const { useRouter, usePathname } = createSharedPathnamesNavigation({
