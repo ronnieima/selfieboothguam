@@ -1,10 +1,7 @@
 import { cn } from "@/lib/utils";
+import { Fingerprint, Layout, VenetianMask } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Fingerprint, Layout, VenetianMask } from "lucide-react";
-import { imageLinks } from "@/messages/content";
-import { Separator } from "@/components/ui/separator";
-import React from "react";
 const LUCIDE_ICON_SIZES = 64;
 
 function Services() {

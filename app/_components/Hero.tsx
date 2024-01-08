@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { socialLinks } from "@/messages/content";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import HeroTypingAnimation from "./HeroTypingAnimation";
-import { imageLinks, socialLinks } from "@/messages/content";
 import Link from "next/link";
+import HeroTypingAnimation from "./HeroTypingAnimation";
 
 function Hero() {
   const t = useTranslations("Hero");
