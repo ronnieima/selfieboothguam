@@ -28,8 +28,8 @@ export default function RootLayout({
 
         <link
           rel="alternate"
-          hrefLang="jp"
-          href="https://www.selfieboothguam.com/jp"
+          hrefLang="ja"
+          href="https://www.selfieboothguam.com/ja"
         />
       </head>
       <body className={`${inter.className}`}>

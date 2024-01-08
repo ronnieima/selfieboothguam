@@ -39,7 +39,7 @@ function LocaleSwitcherSelect() {
       </SelectTrigger>
       <SelectContent>
         <SelectItem value="en">EN</SelectItem>
-        <SelectItem value="jp">JP</SelectItem>
+        <SelectItem value="ja">JA</SelectItem>
       </SelectContent>
     </Select>
   );
