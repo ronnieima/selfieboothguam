@@ -22,6 +22,12 @@ export default function RootLayout({
       <head>
         <link
           rel="alternate"
+          hrefLang="en"
+          href="https://www.selfieboothguam.com/en"
+        />
+
+        <link
+          rel="alternate"
           hrefLang="jp"
           href="https://www.selfieboothguam.com/jp"
         />
