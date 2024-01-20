@@ -35,7 +35,7 @@ function HeroTypingAnimation() {
   return (
     <TypeAnimation
       sequence={locale === "en" ? enText : jpText}
-      className="text-neutral-300 text-center mx-auto lg:mx-0 text-xl lg:text-3xl"
+      className="text-neutral-300 font-extralight tracking-tighter text-center mx-auto lg:mx-0 text-xl lg:text-3xl"
       wrapper="span"
       speed={20}
       repeat={Infinity}

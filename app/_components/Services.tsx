@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
-import { Fingerprint, Layout, VenetianMask } from "lucide-react";
+import layout from "@/public/layout.svg";
+import props from "@/public/props.svg";
+import touchscreen from "@/public/touchscreen.svg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-const LUCIDE_ICON_SIZES = 64;
 
 function Services() {
   const t = useTranslations("Services");
@@ -10,19 +11,19 @@ function Services() {
   const services = [
     {
       image: "/photobooth1.png",
-      icon: <Fingerprint size={LUCIDE_ICON_SIZES} />,
+      icon: touchscreen,
       label: t("service1.header"),
       description: t("service1.description"),
     },
     {
       image: "/layout.jpg",
-      icon: <Layout size={LUCIDE_ICON_SIZES} />,
+      icon: layout,
       label: t("service2.header"),
       description: t("service2.description"),
     },
     {
       image: "/props.png",
-      icon: <VenetianMask size={LUCIDE_ICON_SIZES} />,
+      icon: props,
       label: t("service3.header"),
       description: t("service3.description"),
     },
@@ -31,7 +32,7 @@ function Services() {
     <section className="py-16 bg-secondary scroll-m-16 px-4" id="services">
       <div className="max-w-[100rem]  mx-auto flex flex-col items-center gap-16">
         <header>
-          <h2 className={` text-center text-4xl md:text-6xl `}>
+          <h2 className={` text-center text-4xl md:text-6xl font-extrabold`}>
             {t("header")}
           </h2>
         </header>
@@ -51,8 +52,8 @@ function Services() {
                   `lg:p-8 lg:order-1`
                 )}
               >
-                {service.icon}
-                <h2 className="text-6xl font-bold">{service.label}</h2>
+                <Image src={service.icon} alt={service.label} />
+                <h2 className="text-6xl font-semibold">{service.label}</h2>
                 <p className={`text-xl text-muted-foreground`}>
                   {service.description}
                 </p>

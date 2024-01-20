@@ -1,7 +1,6 @@
 import React from "react";
 import AchievmentsList from "./ui/AchievmentsList";
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
 
 function Achievements() {
   return (
@@ -11,7 +10,7 @@ function Achievements() {
         "lg:flex-row"
       )}
     >
-      <div className="grid grid-cols-2 gap-4 w-full">
+      <div className="flex lg:flex-row flex-col gap-16 w-full">
         <AchievmentsList />
       </div>
     </section>
