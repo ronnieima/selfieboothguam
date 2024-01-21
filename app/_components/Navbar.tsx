@@ -38,7 +38,7 @@ function Navbar() {
         </div>
         <Sheet>
           <SheetTrigger>
-            <Menu size={48} />
+            <Menu size={32} />
           </SheetTrigger>
           <SheetContent side="right">
             <SheetHeader>
@@ -48,7 +48,7 @@ function Navbar() {
               </div>
             </SheetHeader>
 
-            <ul className="flex flex-col gap-8 mt-32">
+            <ul className="flex flex-col gap-8 py-8">
               <NavLinks className=" text-4xl " />
             </ul>
           </SheetContent>

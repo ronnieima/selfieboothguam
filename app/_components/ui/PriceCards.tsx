@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { prices } from "@/messages/content";
 import { useTranslations } from "next-intl";
@@ -11,10 +12,7 @@ function PriceCards() {
       {prices.map((price) => (
         <Card
           key={price.timeInHours}
-          className={cn(
-            "p-4 shadow-xl rounded-none first:rounded-t-xl last:rounded-b-xl",
-            "lg:first:rounded-r-none lg:first:rounded-l-xl lg:last:rounded-r-xl lg:last:rounded-l-none"
-          )}
+          className={cn("p-4 shadow-xl rounded-none")}
         >
           <CardHeader className="self-start">
             <CardTitle>

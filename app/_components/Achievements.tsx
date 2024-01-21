@@ -6,7 +6,7 @@ function Achievements() {
   return (
     <section
       className={cn(
-        "flex flex-col justify-center items-center gap-2 px-4 py-8 bg-neutral-50 dark:bg-neutral-950 w-full",
+        "flex flex-col justify-center items-center gap-2 px-4 py-16 bg-secondary dark:bg-neutral-950 w-full",
         "lg:flex-row"
       )}
     >

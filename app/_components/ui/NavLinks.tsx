@@ -17,7 +17,10 @@ function NavLinks({ className }: NavLinksProps) {
   return (
     <>
       {navLinks.map((navLink) => (
-        <li key={navLink.label} className={cn("hover:underline", className)}>
+        <li
+          key={navLink.label}
+          className={cn("hover:underline font-semibold uppercase", className)}
+        >
           <Link
             href={navLink.href}
             target={navLink.href === socialLinks.facebook ? "_blank" : ""}

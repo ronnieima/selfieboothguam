@@ -18,7 +18,7 @@ export default function RootLayout({
   params: { locale: string };
 }) {
   return (
-    <html lang={locale} className="scroll-smooth bg-background">
+    <html lang={locale} className="scroll-smooth bg-secondary">
       <head>
         <link
           rel="alternate"

@@ -47,8 +47,7 @@ function Hero() {
             </div>
             <Button
               asChild
-              className="w-[300px] lg:w-32 text-foreground mx-auto lg:mx-0"
-              variant={"secondary"}
+              className="w-[300px] lg:w-44 bg-blue-900 text-white mx-auto lg:mx-0"
             >
               <Link href={socialLinks.facebook} target="_blank">
                 {t("button")}

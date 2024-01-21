@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import NavLinks from "./ui/NavLinks";
 import Link from "next/link";
+import LocaleSwitcherSelect from "./ui/LocaleSwitcherSelect";
 
 function Footer() {
   return (
@@ -14,6 +15,7 @@ function Footer() {
         <h3 className={` text-3xl text-red-300`}>Selfiebooth Guam</h3>
         <ul className="flex flex-col gap-2">
           <NavLinks />
+          <LocaleSwitcherSelect />
         </ul>
       </div>
       <div

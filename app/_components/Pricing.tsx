@@ -9,18 +9,18 @@ function Pricing() {
   return (
     <section
       id="pricing"
-      className="bg-background flex flex-col items-center gap-8 py-16 lg:max-w-[80rem] mx-auto scroll-m-16"
+      className="bg-background flex flex-col items-center gap-8 py-32  lg:max-w-[80rem]  mx-auto scroll-m-16"
     >
       <header className="flex flex-col items-center">
-        <Image className="h-64" src={pricing} alt="Pricing" />
-        <h2 className={`font-extrabold text-center text-4xl md:text-6xl `}>
+        <Image className="h-64 w-full" src={pricing} alt="Pricing" />
+        <h2 className={`font-extrabold text-center text-7xl md:text-9xl `}>
           {t("header")}
         </h2>
         <span className="text-muted-foreground">{t("subtitle")}</span>
       </header>
       <div
         className={cn(
-          "flex flex-col items-center justify-center w-full px-2",
+          "flex flex-col items-center justify-center min-w-full px-2",
           "lg:flex-row"
         )}
       >
