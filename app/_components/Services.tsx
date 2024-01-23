@@ -34,18 +34,18 @@ function Services() {
     <section className="py-16 bg-secondary scroll-m-16 px-1" id="services">
       <div className="max-w-[100rem]  mx-auto flex flex-col items-center gap-16">
         <header>
-          <h2 className={` text-center text-7xl md:text-9xl font-extrabold `}>
+          <h2 className={` text-center text-7xl md:text-8xl font-extrabold `}>
             {t("header")}
           </h2>
         </header>
-        {services.map((service) => {
+        {services.map((service, i) => {
           return (
             <React.Fragment key={service.label}>
               <section
                 className={cn(
-                  `flex flex-col gap-4 justify-center items-center w-full `,
+                  `flex flex-col gap-4 justify-center items-center w-full  px-3`,
                   "lg:flex-row lg:justify-between",
-                  "odd:lg:flex-row-reverse px-3"
+                  { "lg:flex-row-reverse": i % 2 !== 0 }
                 )}
               >
                 <header
@@ -55,7 +55,7 @@ function Services() {
                   )}
                 >
                   <Image
-                    className="hidden lg:block"
+                    className="hidden lg:block h-96"
                     src={service.icon}
                     alt={service.label}
                   />

@@ -1,3 +1,4 @@
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { socialLinks } from "@/messages/content";
 import { useTranslations } from "next-intl";
@@ -19,7 +20,11 @@ function NavLinks({ className }: NavLinksProps) {
       {navLinks.map((navLink) => (
         <li
           key={navLink.label}
-          className={cn("hover:underline font-semibold uppercase", className)}
+          className={cn(
+            "hover:underline font-semibold uppercase",
+            { "text-green-700": navLink.label === "Book Now" },
+            className
+          )}
         >
           <Link
             href={navLink.href}
