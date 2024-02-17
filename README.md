@@ -22,7 +22,7 @@ Selfiebooth Guam offers a unique and interactive experience for all types of eve
 - **Internationalization:** Utilized `next-intl` for internationalization, offering seamless bilingual support in English and Japanese to accommodate a diverse audience.
 - **Frontend:** Built with Next.js to ensure a fast, SEO-friendly, and responsive landing page that provides a great first impression and user experience.
 - **Styling:** Tailwind CSS for custom, responsive design that captures the fun and energetic essence of SelfieBoothGuam.
-- **Deployment:** Hosted on Vercel, ensuring high availability and performance for users visiting the site.
+- **Deployment:** Hosted on Netlify, ensuring high availability and performance for users visiting the site.
 - **Dark Mode Functionality:** Integrated dark mode toggle with `shadcn` for a seamless theme-switching experience, catering to user preferences for light or dark interfaces.
 
 
