@@ -31,8 +31,8 @@ function Services() {
     },
   ];
   return (
-    <section className="py-16 bg-secondary scroll-m-16 px-1" id="services">
-      <div className="max-w-[100rem]  mx-auto flex flex-col items-center gap-16">
+    <section className='py-16 bg-secondary scroll-m-16 px-1' id='services'>
+      <div className='max-w-[100rem]  mx-auto flex flex-col items-center gap-16'>
         <header>
           <h2 className={` text-center text-7xl md:text-8xl font-extrabold `}>
             {t("header")}
@@ -54,12 +54,12 @@ function Services() {
                     `lg:p-8 lg:order-1`
                   )}
                 >
-                  <Image
+                  {/* <Image
                     className="hidden lg:block h-96"
                     src={service.icon}
                     alt={service.label}
-                  />
-                  <h2 className="text-6xl font-semibold">{service.label}</h2>
+                  /> */}
+                  <h2 className='text-6xl font-semibold'>{service.label}</h2>
                   <p className={`text-xl text-muted-foreground`}>
                     {service.description}
                   </p>
@@ -69,10 +69,9 @@ function Services() {
                   alt={service.label}
                   width={600}
                   height={400}
-                  className="rounded-3xl shadow-lg lg:order-2 w-auto h-auto"
+                  className='rounded-3xl shadow-lg lg:order-2 w-auto h-auto'
                 />
               </section>
-              <Separator className="last:hidden lg:hidden" />
             </React.Fragment>
           );
         })}
