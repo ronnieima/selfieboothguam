@@ -20,11 +20,7 @@ function NavLinks({ className }: NavLinksProps) {
       {navLinks.map((navLink) => (
         <li
           key={navLink.label}
-          className={cn(
-            "hover:underline font-semibold uppercase",
-            { "text-green-700": navLink.label === "Book Now" },
-            className
-          )}
+          className={cn("hover:underline font-light uppercase", className)}
         >
           <Link
             href={navLink.href}

@@ -1,5 +1,6 @@
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTrigger,
@@ -14,15 +15,15 @@ function Navbar() {
   return (
     <>
       {/* DESKTOP NAVBAR */}
-      <nav className="hidden lg:flex justify-between h-[64px] items-center px-16 sticky top-0 z-40 bg-background ">
-        <div className="">
-          <Link href="/" className="uppercase">
+      <nav className='hidden lg:flex justify-between h-[64px] items-center px-16 sticky top-0 z-40 bg-background '>
+        <div className=''>
+          <Link href='/' className='uppercase'>
             Selfiebooth Guam
           </Link>
         </div>
-        <ul className="flex items-center gap-16">
-          <NavLinks className="[&:nth-child(4)]:bg-green-800 [&:nth-child(4)]:text-white [&:nth-child(4)]:px-4 [&:nth-child(4)]:py-2 [&:nth-child(4)]:rounded-2xl text-xl [&:nth-child(4)]:shadow-xl [&:nth-child(4)]:hover:bg-green-800/90" />
-          <li className="flex gap-2">
+        <ul className='flex items-center gap-16'>
+          <NavLinks className='[&:nth-child(4)]:bg-green-800 [&:nth-child(4)]:text-white [&:nth-child(4)]:px-4 [&:nth-child(4)]:py-2 [&:nth-child(4)]:rounded-2xl text-xl [&:nth-child(4)]:shadow-xl [&:nth-child(4)]:hover:bg-green-800/90' />
+          <li className='flex gap-2'>
             <LocaleSwitcherSelect />
             <ToggleTheme />
           </li>
@@ -30,9 +31,9 @@ function Navbar() {
       </nav>
 
       {/* MOBILE NAVBAR */}
-      <nav className="lg:hidden flex justify-between items-center px-4 h-[3rem]  sticky top-0 z-40 bg-background">
+      <nav className='lg:hidden flex justify-between items-center px-4 h-[3rem]  sticky top-0 z-40 bg-background'>
         <div>
-          <Link href="/" className="uppercase">
+          <Link href='/' className='uppercase'>
             Selfiebooth Guam
           </Link>
         </div>
@@ -40,16 +41,15 @@ function Navbar() {
           <SheetTrigger>
             <Menu size={32} />
           </SheetTrigger>
-          <SheetContent side="right">
+          <SheetContent side='right'>
             <SheetHeader>
-              <div className="flex gap-2">
+              <div className='flex gap-2'>
                 <LocaleSwitcherSelect />
                 <ToggleTheme />
               </div>
             </SheetHeader>
-
-            <ul className="flex flex-col gap-8 py-8">
-              <NavLinks className=" text-4xl " />
+            <ul className='flex flex-col gap-8 py-8'>
+              <NavLinks className=' text-4xl ' />
             </ul>
           </SheetContent>
         </Sheet>

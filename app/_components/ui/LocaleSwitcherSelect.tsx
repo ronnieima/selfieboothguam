@@ -26,7 +26,7 @@ const localeInfo = [
     image: usFlag,
   },
   {
-    label: "Japanese",
+    label: "日本語",
     value: "ja",
     image: jpFlag,
   },
@@ -40,7 +40,7 @@ function LocaleSwitcherSelect() {
 
   function onSelectChange(nextLocale: string) {
     startTransition(() => {
-      router.replace(pathname, { locale: nextLocale });
+      router.replace(pathname, { locale: nextLocale, scroll: false });
     });
   }
   return (
@@ -49,18 +49,18 @@ function LocaleSwitcherSelect() {
       disabled={isPending}
       onValueChange={(value) => onSelectChange(value)}
     >
-      <SelectTrigger className="w-36 bg-secondary text-foreground border border-gray-200 shadow-sm">
+      <SelectTrigger className='w-36 bg-secondary text-foreground border border-gray-200 shadow-sm'>
         <SelectValue placeholder={<Globe />} />
       </SelectTrigger>
       <SelectContent>
         {localeInfo.map((locale) => (
           <SelectItem
-            className="hover:cursor-pointer"
+            className='hover:cursor-pointer'
             key={locale.value}
             value={locale.value}
           >
-            <div className="flex items-center justify-center gap-2 ">
-              <Image src={locale.image} alt={locale.label} className="w-5" />
+            <div className='flex items-center justify-center gap-2 '>
+              <Image src={locale.image} alt={locale.label} className='w-5' />
               <span>{locale.label}</span>
             </div>
           </SelectItem>
