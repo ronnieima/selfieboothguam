@@ -27,17 +27,17 @@ export default function AchievmentsList() {
         return (
           <div
             key={achievement.label}
-            className={cn("w-full flex flex-col items-center")}
+            className={cn("w-full flex flex-col items-start")}
           >
             <Image
-              className="w-64 h-64"
+              className='w-48 h-48'
               src={achievement.image}
               alt={achievement.label}
             />
             <h3 className={cn("text-8xl font-extrabold")}>
               {achievement.metric}
             </h3>
-            <span className="text-lg text-center font-light">
+            <span className='text-lg text-center font-light'>
               {achievement.label}
             </span>
           </div>

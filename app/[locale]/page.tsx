@@ -2,7 +2,8 @@ import Hero from "../_components/Hero";
 import Services from "../_components/Services";
 import Pricing from "../_components/Pricing";
 import Achievements from "../_components/Achievements";
-import { StickyScroll } from "../_components/ui/UIScrollAnimation";
+import CallToAction from "../_components/CallToAction";
+
 const content = [
   {
     title: "Self-serve Touchscreen",
@@ -27,6 +28,7 @@ export default function Home() {
       <Achievements />
       <Services />
       <Pricing />
+      <CallToAction />
     </main>
   );
 }

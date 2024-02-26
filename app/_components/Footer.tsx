@@ -15,7 +15,7 @@ function Footer() {
         <h3 className={` text-3xl text-red-300`}>Selfiebooth Guam</h3>
         <ul className='flex flex-col gap-8'>
           <div className='space-y-2'>
-            <NavLinks />
+            <NavLinks className='text-white' />
           </div>
           <LocaleSwitcherSelect />
         </ul>

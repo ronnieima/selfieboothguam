@@ -6,12 +6,15 @@ function Achievements() {
   return (
     <section
       className={cn(
-        "flex flex-col justify-center items-center gap-2 px-4 py-16 bg-secondary dark:bg-neutral-950 w-full",
+        "px-4 py-16 bg-neutral-50 dark:bg-primary-foreground w-full",
         "lg:flex-row"
       )}
     >
-      <div className="flex lg:flex-row flex-col gap-16 w-full">
-        <AchievmentsList />
+      <div className='max-w-3xl mx-auto space-y-4'>
+        <h2 className='font-bold text-4xl text-center'>Our Achievements</h2>
+        <div className='flex gap-8 w-full justify-center items-center'>
+          <AchievmentsList />
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { socialLinks } from "@/messages/content";
 import { useTranslations } from "next-intl";
@@ -22,12 +22,29 @@ function NavLinks({ className }: NavLinksProps) {
           key={navLink.label}
           className={cn("hover:underline font-light uppercase", className)}
         >
-          <Link
-            href={navLink.href}
-            target={navLink.href === socialLinks.facebook ? "_blank" : ""}
+          <Button
+            asChild
+            size={"sm"}
+            className={cn(
+              "text-foreground",
+              {
+                "bg-green-800 hover:bg-green-600 text-white":
+                  navLink.label.toLowerCase() === "book now" ||
+                  navLink.label === "予約",
+              },
+              className
+            )}
+            variant={
+              navLink.label.toLowerCase() === "book now" ? "secondary" : "link"
+            }
           >
-            {navLink.label}
-          </Link>
+            <Link
+              href={navLink.href}
+              target={navLink.href === socialLinks.facebook ? "_blank" : ""}
+            >
+              {navLink.label}
+            </Link>
+          </Button>
         </li>
       ))}
     </>

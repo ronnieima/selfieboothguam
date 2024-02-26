@@ -34,7 +34,7 @@ function Services() {
     <section className='py-16 bg-secondary scroll-m-16 px-1' id='services'>
       <div className='max-w-[100rem]  mx-auto flex flex-col items-center gap-16'>
         <header>
-          <h2 className={` text-center text-7xl md:text-8xl font-extrabold `}>
+          <h2 className={` text-center text-4xl font-extrabold `}>
             {t("header")}
           </h2>
         </header>
@@ -59,8 +59,10 @@ function Services() {
                     src={service.icon}
                     alt={service.label}
                   /> */}
-                  <h2 className='text-6xl font-semibold'>{service.label}</h2>
-                  <p className={`text-xl text-muted-foreground`}>
+                  <h2 className='text-6xl font-semibold text-center lg:text-left self-start'>
+                    {service.label}
+                  </h2>
+                  <p className={`text-xl text-muted-foreground text-left`}>
                     {service.description}
                   </p>
                 </header>

@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        h2: "3xl",
+      },
       listStyleImage: {
         checkmark: 'url("/checkmark.png")',
       },
