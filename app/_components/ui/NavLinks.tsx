@@ -18,33 +18,14 @@ function NavLinks({ className }: NavLinksProps) {
   return (
     <>
       {navLinks.map((navLink) => (
-        <li
-          key={navLink.label}
-          className={cn("hover:underline font-light uppercase", className)}
-        >
-          <Button
-            asChild
-            size={"sm"}
-            className={cn(
-              "text-foreground",
-              {
-                "bg-green-800 hover:bg-green-600 text-white":
-                  navLink.label.toLowerCase() === "book now" ||
-                  navLink.label === "予約",
-              },
-              className
-            )}
-            variant={
-              navLink.label.toLowerCase() === "book now" ? "secondary" : "link"
-            }
+        <li key={navLink.label}>
+          <Link
+            href={navLink.href}
+            target={navLink.href === socialLinks.facebook ? "_blank" : ""}
+            className={cn(`hover:underline`, className)}
           >
-            <Link
-              href={navLink.href}
-              target={navLink.href === socialLinks.facebook ? "_blank" : ""}
-            >
-              {navLink.label}
-            </Link>
-          </Button>
+            {navLink.label}
+          </Link>
         </li>
       ))}
     </>

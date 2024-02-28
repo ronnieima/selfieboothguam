@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Achievements />
       <Services />
+      <Achievements />
       <Pricing />
       <CallToAction />
     </main>

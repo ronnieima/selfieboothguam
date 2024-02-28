@@ -10,6 +10,7 @@ import Link from "next/link";
 import LocaleSwitcherSelect from "./ui/LocaleSwitcherSelect";
 import { ToggleTheme } from "./ui/ToggleTheme";
 import NavLinks from "./ui/NavLinks";
+import { cn } from "@/lib/utils";
 
 function Navbar() {
   return (
@@ -21,12 +22,8 @@ function Navbar() {
             Selfiebooth Guam
           </Link>
         </div>
-        <ul className='flex items-center gap-16'>
-          <NavLinks className='[&:nth-child(4)]:bg-green-800 [&:nth-child(4)]:text-white [&:nth-child(4)]:px-4 [&:nth-child(4)]:py-2 [&:nth-child(4)]:rounded-2xl text-xl [&:nth-child(4)]:shadow-xl [&:nth-child(4)]:hover:bg-green-800/90' />
-          <li className='flex gap-2'>
-            <LocaleSwitcherSelect />
-            <ToggleTheme />
-          </li>
+        <ul className={cn("flex items-center gap-8")}>
+          <NavLinks className='' />
         </ul>
       </nav>
 

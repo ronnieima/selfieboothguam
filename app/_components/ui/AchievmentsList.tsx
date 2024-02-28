@@ -27,7 +27,7 @@ export default function AchievmentsList() {
         return (
           <div
             key={achievement.label}
-            className={cn("w-full flex flex-col items-start")}
+            className={cn("w-full flex flex-col items-center")}
           >
             <Image
               className='w-48 h-48'
