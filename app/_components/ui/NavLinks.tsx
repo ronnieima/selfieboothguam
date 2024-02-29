@@ -17,17 +17,27 @@ function NavLinks({ className }: NavLinksProps) {
 
   return (
     <>
-      {navLinks.map((navLink) => (
-        <li key={navLink.label}>
-          <Link
-            href={navLink.href}
-            target={navLink.href === socialLinks.facebook ? "_blank" : ""}
-            className={cn(`hover:underline`, className)}
-          >
-            {navLink.label}
-          </Link>
-        </li>
-      ))}
+      {navLinks.map((navLink) => {
+        const isBookNow = navLink.href === socialLinks.facebook ? "_blank" : "";
+
+        return (
+          <li key={navLink.label}>
+            <Link
+              href={navLink.href}
+              target={isBookNow ? "_blank" : ""}
+              className={cn(
+                `hover:underline ${
+                  isBookNow && buttonVariants({ variant: "default" })
+                }`,
+                { "bg-green-700": isBookNow },
+                className
+              )}
+            >
+              {navLink.label}
+            </Link>
+          </li>
+        );
+      })}
     </>
   );
 }

@@ -31,7 +31,7 @@ function Services() {
     },
   ];
   return (
-    <section className='py-16 bg-secondary scroll-m-16 px-1' id='services'>
+    <section className='py-16 bg-secondary scroll-m-16 px-4' id='services'>
       <div className='max-w-[100rem]  mx-auto flex flex-col items-center gap-16'>
         <header>
           <h2 className={` text-center text-4xl font-bold `}>{t("header")}</h2>
@@ -57,10 +57,12 @@ function Services() {
                     src={service.icon}
                     alt={service.label}
                   /> */}
-                  <h2 className='text-6xl font-semibold text-center lg:text-left self-start'>
+                  <h2 className='text-6xl font-semibold text-center lg:text-left ;self-center lg:self-start'>
                     {service.label}
                   </h2>
-                  <p className={`text-xl text-muted-foreground text-left`}>
+                  <p
+                    className={`text-xl text-muted-foreground text-left px-8 lg:px-0`}
+                  >
                     {service.description}
                   </p>
                 </header>

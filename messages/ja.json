@@ -9,9 +9,10 @@
     "title": "<gradient>グアム</gradient>に於いての<br></br>レンタルフォトブース",
     "guam": "グアム",
     "button": "予約",
-    "asideText": "フォトブース サービス"
+    "asideText": "詳しく"
   },
   "Achievements": {
+    "header": "実績",
     "achievement1": "勤続年数（2014年）",
     "achievement2": "のイベントに対応"
   },
@@ -35,5 +36,16 @@
     "subtitle": "時間課金",
     "hours": "時間",
     "DVD": "すべてのイベント写真を収録したDVD"
+  },
+  "CTA": {
+    "header": "次のイベントを撮影する準備はできていますか？",
+    "subtitle": "フェイスブックページにメッセージを送ってください。",
+    "button": "予約"
+  },
+  "Footer": {
+    "services": "サービス一覧",
+    "browse": "ブラウズ",
+    "contact": "コンタクト",
+    "privacy_policy": "個人情報保護方針"
   }
 }

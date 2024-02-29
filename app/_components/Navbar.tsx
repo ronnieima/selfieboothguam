@@ -16,21 +16,21 @@ function Navbar() {
   return (
     <>
       {/* DESKTOP NAVBAR */}
-      <nav className='hidden lg:flex justify-between h-[64px] items-center px-16 sticky top-0 z-40 bg-background '>
+      <nav className='hidden lg:flex justify-between h-[64px] items-center px-16 sticky top-0 z-40 bg-background'>
         <div className=''>
-          <Link href='/' className='uppercase'>
+          <Link href='/' className='uppercase tracking-tighter '>
             Selfiebooth Guam
           </Link>
         </div>
-        <ul className={cn("flex items-center gap-8")}>
-          <NavLinks className='' />
+        <ul className={cn("flex items-center gap-8 ")}>
+          <NavLinks />
         </ul>
       </nav>
 
       {/* MOBILE NAVBAR */}
       <nav className='lg:hidden flex justify-between items-center px-4 h-[3rem]  sticky top-0 z-40 bg-background'>
         <div>
-          <Link href='/' className='uppercase'>
+          <Link href='/' className='uppercase tracking-tighter'>
             Selfiebooth Guam
           </Link>
         </div>
@@ -46,7 +46,7 @@ function Navbar() {
               </div>
             </SheetHeader>
             <ul className='flex flex-col gap-8 py-8'>
-              <NavLinks className=' text-4xl ' />
+              <NavLinks className=' text-2xl ' />
             </ul>
           </SheetContent>
         </Sheet>

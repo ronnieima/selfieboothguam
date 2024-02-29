@@ -58,9 +58,10 @@ function Hero() {
         </div>
       </div>
       <aside
-        className={` hidden lg:flex text-3xl lg:text-4xl font-bold cursor-vertical-text  items-center justify-end gap-4 uppercase w-full text-nowrap py-8`}
+        className={` hidden lg:flex  font-bold cursor-vertical-text  items-center justify-end gap-4 uppercase w-full text-nowrap py-8`}
         style={{ writingMode: "vertical-rl" }}
       >
+        {t("asideText")}
         <ArrowDown lengthAdjust={100} />
       </aside>
     </section>

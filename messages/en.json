@@ -8,9 +8,10 @@
   "Hero": {
     "title": "A <gradient>Guam-based</gradient> Rental <br></br>Photobooth Service.",
     "button": "Book Now",
-    "asideText": "Photobooth Service"
+    "asideText": "Learn more"
   },
   "Achievements": {
+    "header": "Our Achievements",
     "achievement1": "years of service (established 2014)",
     "achievement2": "events served"
   },
@@ -34,5 +35,16 @@
     "subtitle": "Billed hourly",
     "hours": "Hours",
     "DVD": "DVD containing all event photos"
+  },
+  "CTA": {
+    "header": "Ready to capture your next event?",
+    "subtitle": "Send us a message at our Facebook page.",
+    "button": "Book Now"
+  },
+  "Footer": {
+    "services": "Services",
+    "browse": "Browse",
+    "contact": "Contact",
+    "privacy_policy": "Privacy Policy"
   }
 }
