@@ -10,20 +10,20 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 function Hero() {
   const t = useTranslations("Hero");
   return (
-    <section className='grid lg:grid-cols-[95%_5%] max-h-[80svh]  lg:pb-20 '>
-      <div className='relative lg:rounded-r-[3rem] min-h-[75svh] lg:dark:border-gray-600 lg:border-4 lg:border-l-0'>
+    <section className="grid lg:grid-cols-[95%_5%] min-h-[100svh] bg-secondary dark:bg-neutral-950">
+      <div className="relative lg:rounded-tr-[3rem] lg:dark:border-gray-600 dark:lg:border-4 lg:border-l-0">
         <Image
-          className=' lg:rounded-r-[3rem] '
-          src='/hero.jpg'
+          className=" lg:rounded-tr-[3rem] "
+          src="/hero.jpg"
           fill
           alt='hero'
           style={{ objectFit: "cover" }}
           priority
         />
-        <div className='bg-black/70 absolute h-full w-full lg:rounded-r-[3rem] flex flex-col justify-center items-center lg:items-start'>
+        <div className="bg-black/55 absolute h-full w-full lg:rounded-tr-[3rem] flex flex-col justify-center items-center lg:items-start">
           <header
             className={cn(
-              "text-center text-white flex flex-col justify-center items-center gap-8 ",
+              "text-center text-white flex flex-col justify-center items-center gap-16 ",
               "lg:text-left lg:p-32  lg:items-start"
             )}
           >
@@ -58,11 +58,10 @@ function Hero() {
         </div>
       </div>
       <aside
-        className={` hidden lg:flex  font-bold cursor-vertical-text  items-center justify-end gap-4 uppercase w-full text-nowrap py-8`}
+        className={`hidden lg:flex text-md lg:text-xl font-bold cursor-vertical-text  items-center justify-end gap-4 uppercase w-full text-nowrap`}
         style={{ writingMode: "vertical-rl" }}
       >
-        {t("asideText")}
-        <ArrowDown lengthAdjust={100} />
+        &rarr;  Scroll down
       </aside>
     </section>
   );

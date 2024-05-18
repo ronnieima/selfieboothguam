@@ -1,4 +1,4 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { socialLinks } from "@/messages/content";
 import { useTranslations } from "next-intl";
@@ -26,7 +26,7 @@ function NavLinks({ className }: NavLinksProps) {
               href={navLink.href}
               target={isBookNow ? "_blank" : ""}
               className={cn(
-                `hover:underline ${
+                `hover:underline capitalize text-base transition-all duration-1000  ${
                   isBookNow && buttonVariants({ variant: "default" })
                 }`,
                 { "bg-green-700": isBookNow },

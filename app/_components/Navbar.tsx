@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <>
       {/* DESKTOP NAVBAR */}
-      <nav className='hidden lg:flex justify-between h-[64px] items-center px-16 sticky top-0 z-40 bg-background'>
+      <nav className='hidden lg:flex justify-between h-[64px] items-center px-16 sticky top-0 z-40 bg-secondary shadow-sm'>
         <div className=''>
           <Link href='/' className='uppercase tracking-tighter '>
             Selfiebooth Guam
