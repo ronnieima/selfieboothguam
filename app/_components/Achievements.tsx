@@ -12,8 +12,8 @@ function Achievements() {
         "lg:flex-row"
       )}
     >
-      <div className='max-w-3xl mx-auto space-y-16'>
-        <h2 className='font-bold text-4xl text-center'>{t("header")}</h2>
+      <div className=' mx-auto space-y-16 max-w-[100rem]'>
+        <h2 className='uppercase font-extrabold text-center text-4xl lg:text-7xl lg:text-left'>{t("header")}</h2>
         <div className='flex flex-col gap-8 w-full justify-center lg:flex-row items-center'>
           <AchievmentsList />
         </div>

@@ -21,7 +21,7 @@ function Footer() {
         className={cn(
           "grid px-8 py-12 text-white",
           `sm:grid-cols-2`,
-          `lg:px-16 lg:py-8 lg:grid lg:grid-cols-4 gap-16 max-w-[80rem] mx-auto`
+          `lg:px-16 lg:py-8 lg:grid lg:grid-cols-4 gap-16 max-w-[100rem] mx-auto`
         )}
       >
         <div className='flex flex-col gap-4 '>

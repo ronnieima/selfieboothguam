@@ -31,10 +31,10 @@ function Services() {
     },
   ];
   return (
-    <section className='py-16 bg-secondary scroll-m-16 px-4' id='services'>
+    <section className='py-16 bg-secondary scroll-m-16 ppx-4' id='services'>
       <div className='max-w-[100rem]  mx-auto flex flex-col items-center gap-16'>
-        <header>
-          <h2 className={` text-center text-4xl font-bold `}>{t("header")}</h2>
+        <header className="lg:self-start self-center">
+          <h2 className={`uppercase font-extrabold text-center text-4xl lg:text-7xl lg:text-left`}>{t("header")}</h2>
         </header>
         {services.map((service, i) => {
           return (
@@ -52,12 +52,7 @@ function Services() {
                     `lg:p-8 lg:order-1`
                   )}
                 >
-                  {/* <Image
-                    className="hidden lg:block h-96"
-                    src={service.icon}
-                    alt={service.label}
-                  /> */}
-                  <h2 className='text-6xl font-semibold text-center lg:text-left ;self-center lg:self-start'>
+                  <h2 className='text-6xl font-semibold text-center lg:text-left self-center lg:self-start'>
                     {service.label}
                   </h2>
                   <p

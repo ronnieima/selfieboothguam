@@ -1,19 +1,17 @@
 import { cn } from "@/lib/utils";
-import PriceCards from "./ui/PriceCards";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import pricing from "@/public/pricing.svg";
+import PriceCards from "./ui/PriceCards";
 
 function Pricing() {
   const t = useTranslations("Pricing");
   return (
-    <section className='bg-background flex flex-col items-center gap-8 py-16  lg:max-w-[80rem]  mx-auto '>
-      <header id='pricing' className='flex flex-col items-center scroll-m-16'>
-        {/* <Image className='h-64 w-full' src={pricing} alt='Pricing' /> */}
-        <h2 className={`font-extrabold text-center text-4xl md:text-3xl `}>
+    <section className='bg-background flex flex-col items-center gap-8 py-16  lg:max-w-[100rem]  mx-auto '>
+      <header id='pricing' className='uppercase font-extrabold text-center text-4xl lg:text-7xl lg:text-left lg:self-start'>
+      
+        <h2 className={`font-extrabold text-center text-4xl lg:text-7xl  `}>
           {t("header")}
         </h2>
-        <span className='text-muted-foreground'>{t("subtitle")}</span>
+        <span className='text-muted-foreground text-sm'>{t("subtitle")}</span>
       </header>
       <div
         className={cn(

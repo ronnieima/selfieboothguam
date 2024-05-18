@@ -5,17 +5,18 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import HeroTypingAnimation from "./HeroTypingAnimation";
-import { ArrowDown, ArrowRight } from "lucide-react";
 
 function Hero() {
   const t = useTranslations("Hero");
   return (
-    <section className="grid lg:grid-cols-[95%_5%] min-h-[100svh] bg-secondary dark:bg-neutral-950">
-      <div className="relative lg:rounded-tr-[3rem] lg:dark:border-gray-600 dark:lg:border-4 lg:border-l-0">
+    <section className="grid lg:grid-cols-[95%_5%] h-screen bg-secondary dark:bg-neutral-950 max-h-[1170px]">
+      <div className="relative lg:rounded-tr-[3rem] lg:dark:border-gray-600 dark:lg:border-4 lg:border-l-0 h-full ">
         <Image
-          className=" lg:rounded-tr-[3rem] "
+          className=" lg:rounded-tr-[3rem] absolute w-full h-full"
           src="/hero.jpg"
-          fill
+          width={0}
+          height={0}
+          sizes="100vw"
           alt='hero'
           style={{ objectFit: "cover" }}
           priority
@@ -29,7 +30,7 @@ function Hero() {
           >
             <div>
               <h1
-                className={` text-6xl md:text-7xl font-extrabold tracking-tight  `}
+                className={` text-6xl md:text-9xl font-extrabold tracking-tight  `}
               >
                 {t.rich("title", {
                   gradient: (chunks) => (
