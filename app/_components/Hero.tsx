@@ -30,7 +30,7 @@ function Hero() {
           >
             <div>
               <h1
-                className={` text-6xl md:text-9xl font-extrabold tracking-tight  `}
+                className={` text-6xl md:text-7xl font-extrabold tracking-tight  `}
               >
                 {t.rich("title", {
                   gradient: (chunks) => (
