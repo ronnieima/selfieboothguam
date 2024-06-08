@@ -23,7 +23,7 @@ const content = [
 ];
 export default function Home() {
   return (
-    <main className=''>
+    <main>
       <Hero />
       <Services />
       <Achievements />
